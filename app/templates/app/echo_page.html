@@ -18,7 +18,10 @@
   };
   ws.onmessage = (event) => {
       const message = event.data;
-      console.log("메시지 수신: ", message);
+      // message가 json 포맷의 문자열이 아니라면 SyntaxError 예외 발생
+      const obj = JSON.parse(message);
+      console.log(`메시지 수신: ${message}`);
+      console.log(obj);
   };
   ws.onerror = () => {
       console.error("웹 소켓 에러 발생");
