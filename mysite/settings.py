@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # django apps
     "channels",
     "daphne",
     "django.contrib.admin",
@@ -43,6 +44,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # third apps
+    # local apps
+    "app",
 ]
 
 MIDDLEWARE = [
