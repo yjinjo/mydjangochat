@@ -5,10 +5,13 @@ name = "pypi"
 
 [packages]
 django = "==4.1.0"
-channels = {version = "==4.0.0", extras = ["daphne"]}
 python-dotenv = "*"
+django-environ = "*"
+channels = {version = "==4.0.0", extras = ["daphne"]}
+channels-redis = "*"
 
 [dev-packages]
+ipython = "*"
 
 [requires]
 python_version = "3.11"
