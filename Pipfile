@@ -10,6 +10,10 @@ django-environ = "*"
 channels = {version = "==4.0.0", extras = ["daphne"]}
 channels-redis = "*"
 django-bootstrap5 = "*"
+pytest = "*"
+pytest-testdox = "*"
+pytest-django = "*"
+pytest-asyncio = "*"
 
 [dev-packages]
 ipython = "*"
