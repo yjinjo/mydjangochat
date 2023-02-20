@@ -4,6 +4,7 @@ from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView
 
+
 signup = CreateView.as_view(
     form_class=UserCreationForm,
     template_name="partials/form.html",
@@ -13,6 +14,7 @@ signup = CreateView.as_view(
     },
     success_url=reverse_lazy("accounts:login"),
 )
+
 
 login = LoginView.as_view(
     template_name="partials/form.html",

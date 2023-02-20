@@ -42,7 +42,13 @@ def room_new(request):
 @login_required
 def room_chat(request, room_pk):
     room = get_object_or_404(Room, pk=room_pk)
-    return render(request, "chat/room_chat.html", {"room": room})
+    return render(
+        request,
+        "chat/room_chat.html",
+        {
+            "room": room,
+        },
+    )
 
 
 @login_required
